@@ -1,0 +1,85 @@
+container {
+    background: #bb1233;
+    width: 22rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+    margin: 0 auto;
+   } 
+  
+   .buttonHolder{
+     display: flex;
+   }
+  
+  .numberbtn{
+    background: #113c78;
+    color: white;
+    font-size: 13px;
+    border-radius: 50%;
+    padding: 1.5rem;
+    box-shadow: 5px 5px black;
+  }
+  
+  .numberBtnHolder{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2px 5px 10px 0;
+    width: 13rem;
+  }
+  
+  .specialBtn{
+    background: #2061b0;
+    color: white;
+    font-size: 13px;
+    border-radius: 50%;
+    padding: 1.5rem;
+    box-shadow: 5px 5px black;
+  }
+  
+  .specialBtnHolder{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2px 5px 10px 0;
+    width: 13rem;
+  }
+  
+  
+  .operatorBtn{
+    background: #3db5e5;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    padding: 1.5rem;
+    box-shadow: 5px 5px black;
+  
+  }
+  
+  .operatorBtnHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: no-wrap;
+    width: 4rem;
+  }
+  
+  .numberbtn:hover,
+  .specialBtn:hover,
+  .operatorBtn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .screen{
+    background: #2d2829;
+    color: white;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align:end;
+    margin-bottom: 10px;
+  } 
