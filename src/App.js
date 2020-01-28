@@ -10,6 +10,7 @@ import ProjectsList from './projects/projectsList/projectsList'
 import BackgroundHex from './projects/backgroundHex/backgroundHex'
 import Counter from './projects/counter/counter'
 import Calculator from './projects/calculator/calculator'
+import Calc from './projects/easierCalc/calc'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <NavBar />
       <ProjectsList/>
       <Switch>
+        <Route exact path="/easiercalc" component={Calc} />
         <Route exact path="/calc" component={Calculator} />
         <Route exact path="/counter" component={Counter} />
         <Route exact path="/backgroundHex" component={BackgroundHex} />
