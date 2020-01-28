@@ -30,9 +30,9 @@ class Counter extends Component{
         return(
             <div className="counter">
                 <h1>{count}</h1>
-                <button onClick={() => this.incrementCount()}>+</button>
-                <button onClick={() => this.decrementCount()}>-</button>
-                <button onClick={() => this.reset()}>reset</button>
+                <button className='counterBtn' onClick={() => this.incrementCount()}>+</button>
+                <button className='counterBtn' onClick={() => this.decrementCount()}>-</button>
+                <button className='counterBtn' onClick={() => this.reset()}>reset</button>
             </div>
         )
     }

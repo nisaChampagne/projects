@@ -13,13 +13,13 @@ const Calc = () => {
         const clear = document.querySelector('.btn-clear');
 
         buttons.forEach((button) =>{
-            button.addEventListener('click', function(e){
+            button.addEventListener('click', (e)=>{
             let value = e.target.dataset.num;
             screen.value += value;
             })
         });
 
-        equal.addEventListener('click', function(e){
+        equal.addEventListener('click', (e) =>{
             if(screen.value === ''){
             screen.value = 'Please Enter a Value';
             } else {
@@ -28,7 +28,7 @@ const Calc = () => {
             }
         })
 
-        clear.addEventListener('click', function(e){
+        clear.addEventListener('click', (e)=>{
             screen.value = '';
         })
     
