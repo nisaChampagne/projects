@@ -12,7 +12,7 @@ import Counter from './projects/counter/counter'
 import Calculator from './projects/calculator/calculator'
 import Calc from './projects/easierCalc/calc'
 import Calendar from './projects/calendar/calendar'
-
+import Todo from './projects/todoList/Todo'
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <NavBar />
       <ProjectsList/>
       <Switch>
+        <Route exact path="/todo" component={Todo} />
         <Route exact path="/calendar" component={Calendar} />
         <Route exact path="/easiercalc" component={Calc} />
         <Route exact path="/calc" component={Calculator} />

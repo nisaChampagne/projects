@@ -13,6 +13,15 @@
   }
 }
 
+.backgroundHolder{
+  margin-top: 40px;
+}
+
+.counterBtn{
+  padding: 10px 10px 10px 10px;
+  margin-right: 10px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

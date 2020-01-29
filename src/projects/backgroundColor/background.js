@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../App.css'
 
 export default function BackgroundColor(){
     const body = document.querySelector('body')
@@ -12,7 +13,7 @@ export default function BackgroundColor(){
     }
 
     return(
-        <div>
+        <div className='backgroundHolder'>
             <button onClick={changeBackground}>Click Me</button>
         </div>
     )
