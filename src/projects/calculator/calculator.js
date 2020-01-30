@@ -5,6 +5,10 @@ import Operators from './ButtonComponents/OperatoButtons/Operator/operators';
 import Specials from './ButtonComponents/SpecialButtons/Specials';
 import Screen from './DisplayComponents/screen';
 
+import  back from '../../utils/backArrow.png'
+import { NavLink } from "react-router-dom";
+
+
 function App() {
   const [number, setNumber] = useState("0");
 
@@ -54,6 +58,7 @@ function App() {
   }
   return (
     <div className="container">
+        <NavLink to="/projectlist" exact className="notification_link"><img style={{width: '30px', height:'30px', display: 'flex'}}src={back}/></NavLink>
         <Screen data={number}/>
       <div className="buttonHolder">
         <div>

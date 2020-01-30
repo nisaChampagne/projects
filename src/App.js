@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
+import PrivateRoute from './utils/PrivateRoute'
 
+import HomePage from './homepage/homepage'
 import NavBar from './navbar/navbar'
 import Drum from './projects/drum/drum'
 import Random from './projects/randomRest/randomRest'
@@ -13,13 +15,16 @@ import Calculator from './projects/calculator/calculator'
 import Calc from './projects/easierCalc/calc'
 import Calendar from './projects/calendar/calendar'
 import Todo from './projects/todoList/Todo'
+import Router from './projects/blog/router'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <NavBar />
-      <ProjectsList/>
+      <HomePage />
       <Switch>
+        <PrivateRoute exact path="/projectlist" component={ProjectsList} />
+        <Route exact path="/blog" component={Router} />
         <Route exact path="/todo" component={Todo} />
         <Route exact path="/calendar" component={Calendar} />
         <Route exact path="/easiercalc" component={Calc} />

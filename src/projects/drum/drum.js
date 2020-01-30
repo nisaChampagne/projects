@@ -1,5 +1,9 @@
 import React from 'react'
 
+import  back from '../../utils/backArrow.png'
+import { NavLink } from "react-router-dom";
+
+
 import "./drum.scss"
 
 
@@ -26,6 +30,7 @@ export default function Drums(){
 
     return(
         <div className="keys">
+            <NavLink to="/projectlist" exact className="notification_link"><img style={{width: '30px', height:'30px', display: 'flex'}}src={back}/></NavLink>
             <div data-keys="65" className="key">
                 <audio data-key="65" src="src\components\tabs\drum\sounds\African drums 1.wav"></audio>
                 <kbd>A</kbd>

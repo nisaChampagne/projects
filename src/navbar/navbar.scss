@@ -15,7 +15,7 @@
     text-decoration: underline;
   }
   .nav {
-    border-bottom: 2px solid rgb(77, 19, 15);
+    // border-bottom: 2px solid rgb(77, 19, 15);
     background: linear-gradient(to right, rgb(221, 208, 46), rgb(158, 24, 17));    
     background-size:cover;
     margin: 0 auto;
@@ -96,7 +96,7 @@
   }
   img.nav_dropdownIconOpen,
   img.nav_dropdownIconClose {
-    width: 22px;
+    width: 20px;
     height: 22px;
     margin-left: 15px;
     cursor: pointer;
@@ -114,10 +114,10 @@
         display: block;
       }
     }
-    width: 175px;
+    width: 155px;
     position: absolute;
-    right: 10px;
-    top: 18px;
+    right: 34px;
+    top: 25px;
     background-color: #ffffff;
     border: 1px solid rgb(211, 211, 211);
     box-shadow: 0 0 5px rgba(212, 212, 212, 0.288);

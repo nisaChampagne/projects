@@ -1,4 +1,10 @@
 import React from 'react'
+
+import  back from '../../utils/backArrow.png'
+import { NavLink } from "react-router-dom";
+
+
+
 import './calc.scss'
 
 const Calc = () => {
@@ -39,6 +45,7 @@ const Calc = () => {
     return(
         <>
         <div className='holder'>
+        <NavLink to="/projectlist" exact className="notification_link"><img style={{width: '30px', height:'30px', display: 'flex'}}src={back}/></NavLink>
           <form>
             <input type="text" name="" id="" className="screenCalc"/>
           </form>

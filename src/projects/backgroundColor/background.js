@@ -1,6 +1,10 @@
 import React from 'react'
 import '../../App.css'
 
+import  back from '../../utils/backArrow.png'
+import { NavLink } from "react-router-dom";
+
+
 export default function BackgroundColor(){
     const body = document.querySelector('body')
 
@@ -14,7 +18,8 @@ export default function BackgroundColor(){
 
     return(
         <div className='backgroundHolder'>
-            <button onClick={changeBackground}>Click Me</button>
+            <NavLink to="/projectlist" exact className="notification_link"><img style={{width: '30px', height:'30px', display: 'flex'}}src={back}/></NavLink>
+            <button className="backgroundBtn"onClick={changeBackground}>Click Me</button>
         </div>
     )
 }
