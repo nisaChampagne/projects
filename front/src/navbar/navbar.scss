@@ -1,0 +1,220 @@
+.nav__btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  .nav__btn:hover{
+    color: #c26c70;
+  }
+  .nav {
+    // border-bottom: 2px solid rgb(77, 19, 15);
+    background: #c26c70;    
+    background-size:cover;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 3%;
+    z-index: 3;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    .nav__menu {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    img.nav__avatar {
+      border-radius: 50%;
+      margin-right: 10px;
+      width: 40px;
+
+    }
+  }
+  
+
+  .nav__logo{
+    background-size: contain;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 637px) {
+    .nav__logo {
+      width: 200px;
+      background-blend-mode: luminosity;
+    }
+    .nav {
+      margin-left: 0;
+    }
+  }
+
+  .nav_dropdownIconOpen{
+    visibility: hidden;
+  }
+  
+  .subNav__menu {
+    // Use hamburger menu under 637px
+    // background: linear-gradient(#000508, #423C3C, #989898);    
+    @media (max-width: 637px) {
+      display: none;
+    }
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    .subNav__link {
+      list-style-type: none;
+      margin: 0 40px;
+      color: black;
+      font-size: 18px;
+      font-family: 'Share Tech Mono', monospace;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+    .subNav__link.active {
+      color: rgb(54, 219, 54);
+    }
+  }
+  
+  .nav__menu.open img.nav_dropdownIconOpen {
+    display: none;
+  }
+  .nav__menu.closed img.nav_dropdownIconClose {
+    display: none;
+  }
+  @media (max-width: 637px) {
+    img.nav_dropdownIconClose {
+      display: none;
+    }
+  }
+  img.nav_dropdownIconClose {
+    z-index: 1;
+  }
+  img.nav_dropdownIconOpen,
+  img.nav_dropdownIconClose {
+    width: 20px;
+    height: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  img.nav_dropdownIconClose {
+    background: white;
+    border-radius: 50%;
+  }
+
+  .nav__DesktopDropdown {
+    display: none;
+    @media (min-width: 637px) {
+      &.open {
+        display: block;
+      }
+    }
+    width: 155px;
+    position: absolute;
+    right: 34px;
+    top: 25px;
+    background-color: #ffffff;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 0 0 5px rgba(212, 212, 212, 0.288);
+    ul {
+      margin: 0;
+      padding: 5px 20px;
+    }
+    li {
+      list-style-type: none;
+      text-align: left;
+      padding: 8px 0;
+      font-family: 'Share Tech Mono', monospace;
+      color: black;
+      a {
+        font-size: 16px;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      a, button {
+        color: #158fb4;
+      }
+      &:last-child {
+        border-top: 1px solid rgb(212, 212, 212);
+      }
+    }
+  }
+  
+  // *** MOBILE DROPDOWN MENU ***
+  .nav__mobile-menu-btn {
+    display: none;
+  }
+  @media (max-width: 637px) {
+    .nav__avatar, .nav_dropdownIconOpen {
+      display: none;
+    }
+    .nav__mobile-menu-btn {
+      display: block;
+      width: 30px;
+    }
+  }
+  .nav__mobile-menu-btn {
+    cursor: pointer;
+  }
+  .nav__mobile-dropdown {
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .5s ease-in-out;
+    @media (max-width: 637px) {
+      &.open {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+    @media (min-width: 637px) {
+      display: none;
+    }
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    ul {
+      margin-top: 0;
+      padding: 0 20px;
+      text-align: left;
+      background: rgb(157, 156, 156);
+
+    }
+    li {
+      padding: 5px 10px;
+      list-style-type: none;
+      background: rgb(157, 156, 156);
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+      font-family: 'Share Tech Mono', monospace;
+
+    }
+    a, .nav__btn {
+      font-size: 20px;
+    }
+  }
+
+.nav-project{
+  text-decoration: none;
+  padding-top: 15px;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}
+.nav-h3{
+  text-decoration: none;
+  padding-right: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}

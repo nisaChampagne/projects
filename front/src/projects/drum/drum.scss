@@ -1,0 +1,48 @@
+.keys {
+    display:flex;
+    flex:1;
+    min-height:100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:501px){
+    .keys{
+        flex-wrap: wrap;
+    }
+
+}
+
+.key{
+    text-align: center;
+    border-radius: 7px;
+    text-shadow: 2px 2px black;
+    padding: 20px 25px;
+    color: #AAA9AD;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 5px 20px rgba(122, 121, 121, 0.444);
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
+}
+
+
+.playing {
+  transform: scale(1.1);
+  border-color: rgb(54, 219, 54);
+  box-shadow: 0 0 1rem rgb(54, 219, 54);
+}
+  
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+  
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: rgb(54, 219, 54);
+}
