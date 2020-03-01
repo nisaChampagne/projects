@@ -1,0 +1,53 @@
+{
+  "name": "epilogue",
+  "description": "Create REST resources and controllers with Sequelize and Express or Restify",
+  "version": "0.7.1",
+  "author": "David Chester <dchester@shutterstock.com>",
+  "contributors": [
+    {
+      "name": "Matt Broadstone",
+      "email": "mbroadst@gmail.com"
+    }
+  ],
+  "main": "lib/",
+  "scripts": {
+    "jshint": "jshint ./lib ./tests",
+    "mocha": "mocha --check-leaks -R spec -u exports tests/*.test.js tests/**/*.test.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- tests/*.test.js tests/**/*.test.js",
+    "test": "npm run-script jshint && npm run-script mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dchester/epilogue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dchester/epilogue/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "sequelize",
+    "sequelizejs",
+    "rest",
+    "restful",
+    "epilogue",
+    "json",
+    "api"
+  ],
+  "dependencies": {
+    "bluebird": "^3.0.0",
+    "inflection": "^1.7.1",
+    "lodash": "^4.8.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.13.3",
+    "chai": "^3.2.0",
+    "express": "^4.13.3",
+    "istanbul": "^0.4.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5",
+    "request": "^2.60.0",
+    "restify": "^4.0.3",
+    "sequelize": "^3.5.1",
+    "sqlite3": "^3.0.9"
+  }
+}

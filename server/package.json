@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Just a server for a practice blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon index.js"
+  },
+  "keywords": [
+    "blog",
+    "react",
+    "node",
+    "easy?"
+  ],
+  "author": "Nisa Champagne",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/oidc-middleware": "1.0.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "epilogue": "^0.7.1",
+    "express": "^4.17.1",
+    "express-session": "1.15.6",
+    "nodemon": "^2.0.2",
+    "sequelize": "^5.21.3",
+    "sqlite3": "^4.1.1"
+  }
+}
