@@ -20,7 +20,8 @@
     "react-scripts": "3.3.0",
     "sass": "^1.25.1-test.1",
     "semantic-ui-react": "^0.88.2",
-    "sweetalert2": "^9.7.1"
+    "sweetalert2": "^9.7.1",
+    "uuid": "^7.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

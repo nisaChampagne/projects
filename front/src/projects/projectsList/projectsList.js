@@ -17,7 +17,6 @@ export default function ProjectList(){
             <List.Item><NavLink to="/calendar" exact className="notification_link" style={{color: '#c28285'}}>Calendar</NavLink></List.Item>
             <List.Item><NavLink to="/random" exact className="notification_link" style={{color: '#c28285'}}>Random</NavLink></List.Item>
             <List.Item><NavLink to="/drum" exact className="notification_link" style={{color: '#c28285'}}>Drum</NavLink></List.Item>
-            <List.Item><NavLink to="/backgroundColor" exact className="notification_link" style={{color: '#c28285'}}>Background Color</NavLink></List.Item>
         </div>
     )
 }
