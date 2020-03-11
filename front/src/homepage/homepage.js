@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
 
+import ProjectsList from '../projects/projectsList/projectsList'
 
 import {
   Button,
@@ -39,6 +40,7 @@ const HomepageHeading = ({ mobile }) => (
       content='Just A Bunch of Random Projects'
       inverted
       style={{
+        color: "white",
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
         marginBottom: 0,
@@ -50,15 +52,18 @@ const HomepageHeading = ({ mobile }) => (
       content='Check them out.'
       inverted
       style={{
+        color: "white",
         fontSize: mobile ? '1.5em' : '1.7em',
         fontWeight: 'normal',
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button primary size='huge'>
-      Get Started
+    <NavLink to="/projectlist"  exact className="notification_link" >
+
+     <Button style={{fontSize: '17px'}}> Get Started
       <Icon name='right arrow' />
-    </Button>
+      </Button>
+    </NavLink>
   </Container>
 )
 
@@ -187,18 +192,18 @@ const Homepage = () => (
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+            <Header as='h3' style={{ fontSize: '2em', color: 'white' }}>
               I like to make random projects
             </Header>
-            <List link inverted>
-                <List.Item><NavLink to="/todo" exact className="notification_link" style={{color: '#c28285'}}>Todo List</NavLink></List.Item>
-                <List.Item><NavLink to="/groceryList" exact className="notification_link" style={{color: '#c28285'}}>Basic Grocery List</NavLink></List.Item>
-                <List.Item><NavLink to="/easiercalc" exact className="notification_link" style={{color: '#c28285'}}>Easier Calc</NavLink></List.Item>
-                <List.Item><NavLink to="/calc" exact className="notification_link" style={{color: '#c28285'}}>Calculator</NavLink></List.Item>
-                <List.Item><NavLink to="/counter" exact className="notification_link" style={{color: '#c28285'}}>Counter</NavLink></List.Item>
-                <List.Item><NavLink to="/calendar" exact className="notification_link" style={{color: '#c28285'}}>Calendar</NavLink></List.Item>
-                <List.Item><NavLink to="/random" exact className="notification_link" style={{color: '#c28285'}}>Random</NavLink></List.Item>
-                <List.Item><NavLink to="/drum" exact className="notification_link" style={{color: '#c28285'}}>Drum</NavLink></List.Item>
+            <List link inverted >
+                <List.Item><NavLink to="/todo" exact className="project_link" style={{color:"white", textDecoration: 'none'}}>Todo List</NavLink></List.Item>
+                <List.Item><NavLink to="/groceryList" exact className="project_link" style={{color:"white", textDecoration: 'none'}}>Basic Grocery List</NavLink></List.Item>
+                <List.Item><NavLink to="/easiercalc" exact className="project_link" style={{color:"white", textDecoration: 'none'}}>Easier Calc</NavLink></List.Item>
+                <List.Item><NavLink to="/calc" exact className="project_link" style={{color:"white", textDecoration: 'none'}}>Calculator</NavLink></List.Item>
+                <List.Item><NavLink to="/counter" exact className="project_link" style={{color:"white", textDecoration: 'none'}}>Counter</NavLink></List.Item>
+                <List.Item><NavLink to="/calendar" exact className="project_link" style={{color:"white", textDecoration: 'none'}}>Calendar</NavLink></List.Item>
+                <List.Item><NavLink to="/random" exact className="project_link" style={{color:"white", textDecoration: 'none'}}>Random</NavLink></List.Item>
+                <List.Item><NavLink to="/drum" exact className="project_link" style={{color:"white", textDecoration: 'none'}}>Drum</NavLink></List.Item>
               </List>
           </Grid.Column>
           {/* <Grid.Column floated='right' width={6}>
@@ -235,7 +240,7 @@ const Homepage = () => (
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={7}>
-              <Header as='h4' inverted>
+              <Header as='h4' inverted style={{color:"white", fontSize:'20px'}}>
                 Feel free to poke around under the hood.
               </Header>
               <p>

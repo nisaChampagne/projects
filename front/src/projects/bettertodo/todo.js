@@ -5,6 +5,8 @@ import * as uuid from "uuid";
 import {
     List
   } from 'semantic-ui-react'
+
+import './todo.scss'
   
 class TodoList extends Component {
   constructor(props) {
