@@ -222,7 +222,6 @@ const Homepage = () => (
               "How do I JavaScript again?"
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
               Me, back in May of 2019
             </p>
           </Grid.Column>
