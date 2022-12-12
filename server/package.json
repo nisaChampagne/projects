@@ -21,7 +21,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "epilogue": "^0.7.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "1.15.6",
     "nodemon": "^2.0.2",
     "sequelize": "^5.21.3",
